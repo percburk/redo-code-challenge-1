@@ -2,7 +2,7 @@ $(onReady);
 
 function onReady() {
   console.log('JS and JQ loaded');
-  $('#generateButton').on('click', createDiv);
+  $(document).on('click', '#generateButton', createDiv);
   $(document).on('click', '#yellowButton', turnYellow);
   $(document).on('click', '#deleteButton', deleteDiv);
 }
